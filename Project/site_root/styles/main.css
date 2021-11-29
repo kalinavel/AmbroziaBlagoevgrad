@@ -1,0 +1,10 @@
+html, body{
+    background-color: antiquewhite;
+    background-image: url('../images/background.jpg');
+}
+div{
+    border: solid brown;
+}
+p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
