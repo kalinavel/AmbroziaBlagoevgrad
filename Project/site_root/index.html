@@ -6,26 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Заглавна страница</title>
     <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/footer.css">
 </head>
 <body>
       <header>
           <h2>Магазин за мед и пчелни продукти</h2>
+          <section>
+            <nav>
+              <ul>
+                <li class="main_menu"><strong>Меню</strong>
+                  <ul>
+                    <li><a href="./pages/about_us.html">За Нас</a></li>
+                    <li><a href="./pages/gallery.html">Галерия</a></li>
+                    <li><a href="./pages/news.html">Новини</a></li>
+                    <li><a href="./pages/contact.html ">Контакт</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </section>
       </header>
-      <section>
-        <nav>
-          <ul>
-            <li><a href="./pages/about_us.html">За Нас</a></li>
-            <li><a href="./pages/gallery.html">Галерия</a></li>
-            <li><a href="./pages/news.html">Новини</a></li>
-            <li><a href="./pages/contact.html ">Контакт</a></li>
-          </ul>
-        </nav>
-        <img src="./images/alexander-mils-nesUgwNX3u4-unsplash.jpg" alt="honey spoon" width="900" height="550">
-        <article>
-          <h1>За Нас</h1>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni at labore corrupti doloribus laboriosam quod inventore optio, non itaque magnam deserunt architecto fuga beatae nesciunt vel esse, animi iure et?</p>
-        </article>
-      </section>
+      
+        <img class="slideshow" src="./images/alexander-mils-nesUgwNX3u4-unsplash.jpg" alt="honey spoon" width="900" height="550">
+        <main>
+          <article class="clearfix">
+            <img src="./images/ankith-choudhary-AbBZKCPzLQQ-unsplash.jpg" alt="" width="200" height="200">
+            <div class="article">
+              <h1>За Нас</h1>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni at labore corrupti doloribus laboriosam quod inventore optio, non itaque magnam deserunt architecto fuga beatae nesciunt vel esse, animi iure et?</p>
+            </div>
+          </article>
+        </main>
       <footer>
           <p class="footer__copyright">copyright 2021</p>
           <p class="footer__author">kalinavelichkova</p>

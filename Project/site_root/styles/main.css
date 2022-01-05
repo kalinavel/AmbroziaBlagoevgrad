@@ -1,10 +1,46 @@
-html, body{
-    background-color: antiquewhite;
-    background-image: url('../images/background.jpg');
-}
-div{
-    border: solid brown;
-}
-p{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
+  html, body {
+    min-height: 100%;
+  }
+  body {
+    box-sizing: border-box;
+    margin: 0;
+    position: relative;
+
+    font-size: 20px;
+    font-family: Geneva, Tahoma, sans-serif;
+
+    color: rgb(172, 112, 167);
+    background: antiquewhite url('../images/background.jpg') center center/cover no-repeat;
+  }
+  .slideshow {
+    width: 70vw;
+    margin: 10vw 15vw 5vw 15vw;
+    height: 80vh;
+  }
+  
+  /* Create two columns/boxes that floats next to each other */
+  article>img {
+    float: left;
+    margin: .5vw 2vw 5vw 15vw;
+  }
+  
+  .article {
+    height: 50vh;
+    width: 70%;
+    color: rgb(172, 112, 167);
+  }
+  
+  /* Clear floats after the columns */
+  .clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  
+  /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+  @media (max-width: 600px) {
+    nav, article {
+      width: 100%;
+      height: auto;
+    }
+  }
