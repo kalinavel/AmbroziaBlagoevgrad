@@ -1,18 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bg">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Заглавна страница</title>
+    <title>АС55 - Магазин за мед</title>
+    <link rel="icon" href="./images/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/main.css">
     <link rel="stylesheet" href="./styles/header.css">
     <link rel="stylesheet" href="./styles/footer.css">
 </head>
 <body>
       <header>
-          <h2>Магазин за мед и пчелни продукти</h2>
-          <section>
+        <h1 id="site_description">Магазин за мед и пчелни продукти</h1>
+
+        <div>
+          <a href="">
+            <img src="./images/logo.png" id="logo" alt="Mагазин за мед и пчелни продукти - Благоевград">
+          </a>
+        </div>
             <nav>
               <ul>
                 <li class="main_menu"><strong>Меню</strong>
@@ -25,19 +37,99 @@
                 </li>
               </ul>
             </nav>
-          </section>
       </header>
+      <main>
+      <div class="slideshow_container">
+        <div class="slideshow fade">
+          <div class="numbertext">1 / 4</div>
+          <img src="./images/honey-752145_1920.jpg" style="width:100%">
+          <div class="text"><h2 class="slideshow_titles">Магазин за здраве</h2> През 2017г, водени от убеждението, че натуралните български продукти са извор на здраве и дълголетие, отворихме магазин за мед и пчелни продукти.</div>
+        </div>
+        
+        <div class="slideshow fade">
+          <div class="numbertext">2 / 4</div>
+          <img src="./images/ambroziq.jpg" style="width:100%">
+          <div class="text"><h2 class="slideshow_titles">Продукти от пчеларска ферма "Амброзия"</h2>Висококачествени, разнообразни, 100% пчелни продукти: мед, пчелно млечице, пчелен прашец, перга и др.</div>
+        </div>
+        
+        <div class="slideshow fade">
+          <div class="numbertext">3 / 4</div>
+          <img src="./images/farmadentbio.jpg" style="width:100%">
+          <div class="text"><h2 class="slideshow_titles">Натурална козметика от "Фармадент Био"</h2>Козметика и хранителни добавки на базата на прополис и растителни екстракти.</div>
+        </div>
+
+        <div class="slideshow fade">
+          <div class="numbertext">4 / 4</div>
+          <img src="./images/alinteas.jpg" style="width:100%">
+          <div class="text"><h2 class="slideshow_titles">Билкови чайове от "Алин"</h2>Чайове в насипна форма, събирани от екологично чисти кътчета по нашите планини.</div>
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+      </div>
+      <br>
+        
+      <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span> 
+      </div>
+      <script>
+        var slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("slideshow");
+          var dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 6000); // Change image every 6 seconds
+        }
+        </script>
       
-        <img class="slideshow" src="./images/alexander-mils-nesUgwNX3u4-unsplash.jpg" alt="honey spoon" width="900" height="550">
-        <main>
           <article class="clearfix">
-            <img src="./images/ankith-choudhary-AbBZKCPzLQQ-unsplash.jpg" alt="" width="200" height="200">
-            <div class="article">
-              <h1>За Нас</h1>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni at labore corrupti doloribus laboriosam quod inventore optio, non itaque magnam deserunt architecto fuga beatae nesciunt vel esse, animi iure et?</p>
+            <div class="article_container clearfix">
+              <img class="float_left" src="./images/ankith-choudhary-AbBZKCPzLQQ-unsplash.jpg" alt="">
+              <div class="article_text">
+                <h1>За Нас</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni at labore corrupti doloribus laboriosam quod inventore optio, non itaque magnam deserunt architecto fuga beatae nesciunt vel esse, animi iure et?</p>
+                <a style="color:rgb(172, 112, 167);" href="./pages/about_us.html">вижте повече</a>
+              </div>
+            </div>
+            <div class="article_container clearfix">
+              <img class="float_right" src="./images/bee-pollen-2549125_1280.jpg" alt="">
+              <div class="article_text">
+                <h1>Какво предлагаме?</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni at labore corrupti doloribus laboriosam quod inventore optio, non itaque magnam deserunt architecto fuga beatae nesciunt vel esse, animi iure et?</p>
+                <a style="color:rgb(172, 112, 167);" href="./pages/about_us.html">вижте повече</a>
+              </div>
             </div>
           </article>
-        </main>
+          <div id="manufacturers_showcase">
+            <h2 style="color:white; padding: 2vh; text-align: center;">Дистрибутори сме само на български утвърдени производители.</h2>
+            <div id="manufacturers_logos">
+              <img src="./images/logo-аmbrozia.png" alt="лого на Амброзия">
+              <img src="./images/logo-alin.svg" alt="лого на Алин">
+              <img src="./images/logo-farmadent.png" alt="лого на Фармадент">
+              <img src="./images/logo-bioherba.png" alt="лого на Биохерба">
+              <img src="./images/logo-aroniada.jpeg" alt="лого на Арониада">
+            </div>
+          </div>
+          <div id="testimonials">
+            <h2 style="color: rgb(172, 112, 167); padding: 2vh; text-align: center; font-family: 'Amatic SC', cursive; font-size: 2.5rem;">Какво казват клиентите за нас:</h2>
+          </div>
+      </main>
       <footer>
           <p class="footer__copyright">copyright 2021</p>
           <p class="footer__author">kalinavelichkova</p>
