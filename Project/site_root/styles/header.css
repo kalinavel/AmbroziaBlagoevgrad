@@ -38,11 +38,11 @@ header {
     background: rgb(100, 64, 97);
   }
 
-  .main_menu:hover{
+  .main-menu:hover{
     cursor: pointer;  
   }
   /* Style the list inside the menu */
-  .main_menu>ul>li {
+  .main-menu>ul>li {
     text-align: left;
     margin-right: 30em;
     padding: .4em 1em .4em 1em;
@@ -50,7 +50,7 @@ header {
     background:rgb(100, 64, 97);
   }
 
-  .main_menu>ul>li:first-of-type {
+  .main-menu>ul>li:first-of-type {
     text-align: left;
     margin-right: 30em;
     padding: .8em 1em .4em 1em;
@@ -71,11 +71,11 @@ header {
     display: none;
   }
 
-  .main_menu:hover>ul {
+  .main-menu:hover>ul {
     display: inline-block;
   }
 
-  .main_menu>ul>li:hover {
+  .main-menu>ul>li:hover {
     font-weight: bold;
     background-color: rgb(238, 172, 85);
   }

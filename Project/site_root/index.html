@@ -26,7 +26,7 @@
     </div>
         <nav>
           <ul>
-            <li class="main_menu"><strong>Меню</strong>
+            <li class="main-menu"><strong>Меню</strong>
               <ul>
                 <li><a href="./pages/about_us.html">За Нас</a></li>
                 <li><a href="./pages/gallery.html">Галерия</a></li>
@@ -38,52 +38,52 @@
         </nav>
   </header>
   <main>
-    <div class="slideshow_container">
+    <div class="slideshow-container">
       <div class="slideshow fade">
       <div class="numbertext">1 / 4</div>
       <img src="./images/honey.jpg" style="width:100%" alt="филия хляб с мед">
-      <div class="text"><h2 class="slideshow_titles">Магазин за здраве</h2> През 2017г, водени от убеждението, че натуралните български продукти са извор на здраве и дълголетие, отворихме магазин за мед и пчелни продукти.</div>
+      <div class="text"><h2 class="slideshow-titles">Магазин за здраве</h2> През 2017г, водени от убеждението, че натуралните български продукти са извор на здраве и дълголетие, отворихме магазин за мед и пчелни продукти.</div>
       </div>
     
       <div class="slideshow fade">
       <div class="numbertext">2 / 4</div>
       <img src="./images/ambroziq.jpg" style="width:100%" alt="пчели">
-      <div class="text"><h2 class="slideshow_titles">Продукти от пчеларска ферма "Амброзия"</h2>Висококачествени, разнообразни, 100% пчелни продукти: мед, пчелно млечице, пчелен прашец, перга и др.</div>
+      <div class="text"><h2 class="slideshow-titles">Продукти от пчеларска ферма "Амброзия"</h2>Висококачествени, разнообразни, 100% пчелни продукти: мед, пчелно млечице, пчелен прашец, перга и др.</div>
       </div>
     
       <div class="slideshow fade">
       <div class="numbertext">3 / 4</div>
       <img src="./images/farmadentbio.jpg" style="width:100%" alt="натурална козметика">
-      <div class="text"><h2 class="slideshow_titles">Натурална козметика от "Фармадент Био"</h2>Козметика и хранителни добавки на базата на прополис и растителни екстракти.</div>
+      <div class="text"><h2 class="slideshow-titles">Натурална козметика от "Фармадент Био"</h2>Козметика и хранителни добавки на базата на прополис и растителни екстракти.</div>
       </div>
 
       <div class="slideshow fade">
       <div class="numbertext">4 / 4</div>
       <img src="./images/alinteas.jpg" style="width:100%" alt="чай">
-      <div class="text"><h2 class="slideshow_titles">Билкови чайове от "Алин"</h2>Чайове в насипна форма, събирани от екологично чисти кътчета по нашите планини.</div>
+      <div class="text"><h2 class="slideshow-titles">Билкови чайове от "Алин"</h2>Чайове в насипна форма, събирани от екологично чисти кътчета по нашите планини.</div>
       </div>
     </div>
     <br>
     
     <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span> 
-        <span class="dot" onclick="currentSlide(2)"></span> 
-        <span class="dot" onclick="currentSlide(3)"></span>
-        <span class="dot" onclick="currentSlide(4)"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span>
+        <span class="dot"></span> 
     </div>
 
   <article class="clearfix">
-    <div class="article_container clearfix">
-      <img class="float_left" src="./images/bee-on-flower.jpg" alt="пчела върху цвете">
-      <div class="article_text">
+    <div class="article-container clearfix">
+      <img class="float-left" src="./images/bee-on-flower.jpg" alt="пчела върху цвете">
+      <div class="article-text">
         <h2>За Нас</h2>
         <p>Ние сме дистрибутори на пчеларска ферма <em><strong>"Амброзия"</strong></em>. А ето и малко информация за фирмата производител. През 2009г. "Амброзия" създава най-големия пчелин в България в китното Лудогорие, с 2100 кошера. Районът е изключително чист и пчелите се радват на богата и разнообразна паша. От тогава до днес фермата продължава да се развива и обогатява асортимента си от пчелни продукти.</p>
         <a style="color:rgb(172, 112, 167);" href="./pages/about_us.html">вижте повече</a>
       </div>
     </div>
-    <div class="article_container clearfix">
-      <img class="float_right" src="./images/bee-pollen.jpg" alt="пчелен прашец">
-      <div class="article_text">
+    <div class="article-container clearfix">
+      <img class="float-right" src="./images/bee-pollen.jpg" alt="пчелен прашец">
+      <div class="article-text">
         <h2>Какво още предлагаме?</h2>
         <p><em><strong>"Биохерба"</strong></em> предлага на българския и европейския пазар повече от 900 здравословни продукта на билкова основа. Те поставят качеството на първо място и работят с най-добрите световни фирми за производство и доставка на суровини.</p>
         <a style="color:rgb(172, 112, 167);" href="./pages/about_us.html#bioherba">вижте повече</a>
@@ -105,12 +105,11 @@
     </div>
   </main>
   <footer>
-      <p class="footer__copyright">copyright 2022</p>
-      <p class="footer__author">kalinavelichkova</p>
+      <p class="footer-copyright">copyright 2022</p>
+      <p class="footer-author">kalinavelichkova</p>
   </footer>
   <script>
     let slideIndex = 0;
-    showSlides();
     
     function showSlides() {
       let i;
@@ -128,6 +127,7 @@
       dots[slideIndex-1].className += " active";
       setTimeout(showSlides, 6000); // Change image every 6 seconds
     }
+    showSlides();
   </script>
 </body>
 </html>

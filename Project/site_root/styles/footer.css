@@ -9,12 +9,12 @@ footer {
     color: white;
     background-color: rgb(100, 64, 97);
   }
-  .footer__copyright {
+  .footer-copyright {
     display: inline-block;
     margin-left: 1em;
     text-align: left;
   }
-  .footer__author {
+  .footer-author {
     display: inline-block;
     margin-left: 20em;
     text-align: right;

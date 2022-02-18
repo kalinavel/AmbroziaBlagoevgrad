@@ -19,7 +19,7 @@
   img {vertical-align: middle; height: 92vh;}
 
   /* Slideshow container */
-  .slideshow_container {
+  .slideshow-container {
     margin: auto;
     position: relative;
     height: 92vh;
@@ -45,7 +45,7 @@
     box-shadow: 5px 5px 15px 5px #000000;
   }
 
-  .slideshow_titles {
+  .slideshow-titles {
     font-family: 'Amatic SC', cursive;
     font-size: 3rem;
     position: relative;
@@ -58,7 +58,7 @@
   }
 
   /* Adding a shorter bottom border */
-  .slideshow_titles:before {
+  .slideshow-titles:before {
     content : "";
     position: absolute;
     left: 4vw;
@@ -115,7 +115,7 @@
   @media only screen and (max-width: 300px) {
     .prev, .next,.text {font-size: 11px}
   }
-  .article_container {
+  .article-container {
     margin: 0 auto;
     position: relative;
     top: 15vh;
@@ -125,24 +125,24 @@
     color: rgb(100, 64, 97);
   }
 
-  .article_text {
+  .article-text {
     height: 50vh;
     margin: 2vh;
   }
 
-  .article_text:hover {
+  .article-text:hover {
     font-weight: bold;
   }
 
   /* Create three images that alternate left and right floats */
-  .float_left {
+  .float-left {
     height: 50vh;
     width: 50vh;
     float: left;
     margin: .5vw 2vw 5vw 0;
   }
 
-  .float_right {
+  .float-right {
     height: 50vh;
     width: 50vh;
     float: right;
@@ -210,7 +210,7 @@
 
   /* Image gallery in gallery page */
   /* Position the image container (needed to position the left and right arrows) */
-  .container_gallery {
+  .container-gallery {
     position: relative;
     width: 60vw;
     margin: 0 auto;
@@ -266,19 +266,19 @@
     color: white;
   }
 
-  .container_thumbnail {
+  .container-thumbnail {
     margin-left: 14vw;
     width: 100vw;
   }
 
   /* Six floating images */
-  .container_thumbnail>.column>img {
+  .container-thumbnail>.column>img {
     float: left;
     width: 12vw;
     height: 30vh;
   }
 
-  .container_thumbnail:after {
+  .container-thumbnail:after {
     content: "";
     display: table;
     clear: both;
