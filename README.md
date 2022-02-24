@@ -1,4 +1,4 @@
-# AmbrosiqShop Website
+# AmbroziaBlagoevgrad Website
 This is my first website, which I made for the honey-shop of my family. Some of the technical stuff, which I included, are floats, slideshows and parallax effect. 
 Here are also some screenshots:
 <img width="1106" alt="Screenshot 2022-02-23 at 17 39 16" src="https://user-images.githubusercontent.com/92947262/155357660-0b943fbe-fc15-41bf-a97e-5d23e0a64f1f.png">
