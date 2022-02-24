@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Галерия</title>
+  <link rel="icon" href="../images/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400&family=Lato:ital@1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/main.css">
+  <link rel="stylesheet" href="../styles/header.css">
+  <link rel="stylesheet" href="../styles/footer.css">
+</head>
+<body>
+  <header>
+    <h1 id="site_description">Магазин за мед и пчелни продукти</h1>
+    <div>
+      <a href="../index.html">
+        <img src="../images/logo.png" id="logo" alt="Mагазин за мед и пчелни продукти - Благоевград">
+      </a>
+    </div>
+      <section>
+        <nav>
+          <ul>
+            <li class="main-menu"><a href="../index.html"><strong>Меню</strong></a>
+              <ul>
+                <li><a href="./about_us.html">За Нас</a></li>
+                <li><a href="./gallery.html">Галерия</a></li>
+                <li><a href="./contact.html ">Контакт</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </section>
+  </header>
+  <main>
+  
+    <div class="container-gallery">
+      <div class="gallerySlides">
+        <img src="../images/gallery/IMG_20220106_152440.jpg" alt="Mагазин за мед и пчелни продукти - Благоевград">
+      </div>
+    
+      <div class="gallerySlides">
+        <img src="../images/gallery/IMG_20220106_153648.jpg" alt="Mагазин за мед и пчелни продукти - Благоевград">
+      </div>
+    
+      <div class="gallerySlides">
+        <img src="../images/gallery/IMG_20220106_153001.jpg" alt="Mагазин за мед и пчелни продукти - Благоевград">
+      </div>
+      <div class="gallerySlides">
+        <img src="../images/gallery/IMG_20220106_153411.jpg" alt="Mагазин за мед и пчелни продукти - Благоевград">
+      </div>
+    
+      <div class="gallerySlides">
+        <img src="../images/gallery/IMG_20220106_152627.jpg" alt="Mагазин за мед и пчелни продукти - Благоевград">
+      </div>
+      <div class="gallerySlides">
+        <img src="../images/gallery/IMG_20220106_153401.jpg" alt="Mагазин за мед и пчелни продукти - Благоевград">
+      </div>
+    
+      <a class="prev">❮</a>
+      <a class="next">❯</a>
+      <div class="caption-container">
+        <p id="caption">Галерия</p>
+      </div>
+    </div> 
+    <div class="container-thumbnail">
+      <div class="column">
+        <img id ="img1" class="demo cursor" src="../images/gallery/IMG_20220106_152440.jpg" alt="Mагазин за мед и пчелни продукти - Благоевград">
+      </div>
+      <div class="column">
+        <img id ="img2" class="demo cursor" src="../images/gallery/IMG_20220106_153648.jpg" alt="Mагазин за мед и пчелни продукти - Благоевград">
+      </div>
+      <div class="column">
+        <img id ="img3" class="demo cursor" src="../images/gallery/IMG_20220106_153001.jpg" alt="Mагазин за мед и пчелни продукти - Благоевград">
+      </div>
+      <div class="column">
+        <img id="img4" class="demo cursor" src="../images/gallery/IMG_20220106_153411.jpg" alt="Mагазин за мед и пчелни продукти - Благоевград">
+      </div>
+      <div class="column">
+        <img id="img5" class="demo cursor" src="../images/gallery/IMG_20220106_152627.jpg" alt="Mагазин за мед и пчелни продукти - Благоевград">
+      </div>    
+      <div class="column">
+      <img id="img6" class="demo cursor" src="../images/gallery/IMG_20220106_153401.jpg" alt="Mагазин за мед и пчелни продукти - Благоевград">
+      </div>
+    </div>   
+  </main>
+  <footer>
+    <p class="footer-copyright">copyright 2022</p>
+    <p class="footer-author">kalinavelichkova</p>
+  </footer>
+
+  <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("gallerySlides");
+      var dots = document.getElementsByClassName("demo");
+      var captionText = document.getElementById("caption");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+
+    function currentSlide(n) {
+      return function() {
+        showSlides(slideIndex = n)
+      };
+    }
+
+    let firstImage = document.getElementById('img1');
+    let secondImage = document.getElementById('img2');
+    let thirdImage = document.getElementById('img3');
+    let fourthImage = document.getElementById('img4');
+    let fifthImage = document.getElementById('img5');
+    let sixthImage = document.getElementById('img6');
+
+    firstImage.addEventListener('click', currentSlide(1));
+    secondImage.addEventListener('click', currentSlide(2));
+    thirdImage.addEventListener('click', currentSlide(3));
+    fourthImage.addEventListener('click', currentSlide(4));
+    fifthImage.addEventListener('click', currentSlide(5));
+    sixthImage.addEventListener('click', currentSlide(6));
+
+    function plusSlides(n) {
+      return function() {
+        showSlides(slideIndex += n)
+       };
+    }
+    let prevLink = document.querySelector('.prev');
+    let nextLink = document.querySelector('.next');
+
+    prevLink.addEventListener('click', plusSlides(-1));
+    nextLink.addEventListener('click', plusSlides(1));
+  </script>
+  
+</body>
+</html>

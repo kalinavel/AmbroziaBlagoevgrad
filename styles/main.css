@@ -1,0 +1,325 @@
+  html, body {
+    min-height: 100%;
+  }
+
+  body {
+    box-sizing: border-box;
+    margin: 0;
+    position: relative;
+
+    font-size: 20px;
+    font-family: 'Comfortaa', cursive;
+
+    color: rgb(100, 64, 97);
+    background: antiquewhite url('../images/background.jpg') center center/cover no-repeat;
+  }
+  
+  /* Create slideshow */
+  .slideshow {display:none; height: 92vh;}
+  .slideshow img {vertical-align: middle; height: 92vh; width: 100%;}
+
+  /* Slideshow container */
+  .slideshow-container {
+    margin: auto;
+    position: relative;
+    height: 92vh;
+    width: 100%;
+  }
+
+  /* Caption titles and text */
+  .text {
+    font-family: 'Amatic SC', cursive;
+    font-size: 2rem;
+    font-weight: bold;
+    position: absolute;
+    top: 60vh;
+    right: 4vw;
+    width: 60%;
+    padding: 0 1vh 2vh 2vh;
+    border-radius: 2%;
+
+    color: white;
+    background-color: rgb(100, 64, 97, .7);
+    text-shadow: 3px 5px 2px rgb(100, 64, 97);
+    -webkit-box-shadow: 5px 5px 15px 5px #000000; 
+    box-shadow: 5px 5px 15px 5px #000000;
+  }
+
+  .slideshow-titles {
+    font-family: 'Amatic SC', cursive;
+    font-size: 3rem;
+    position: relative;
+    z-index: 10;
+    text-align: left;
+    margin: 2vh;
+
+    color: rgb(238, 235, 85);
+    text-shadow: 3px 5px 2px rgb(100, 64, 97);
+  }
+
+  /* Adding a shorter bottom border */
+  .slideshow-titles:before {
+    content : "";
+    position: absolute;
+    left: 4vw;
+    top: 5vh;
+    height: 2vh;
+    width: 50%;
+    border-bottom: 3px solid rgb(238, 172, 85);
+  }
+  
+  /* Number text (1/4 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 2vh;
+    width: 2vw;
+    margin-bottom: 2vh;
+    background-color: rgb(100, 64, 97, .7);
+    border-radius: 50%;
+    display: inline-block;
+    transition: color 0.6s ease;
+  }
+
+  .active, .dot:hover {
+    background-color: rgb(100, 64, 97);
+  }
+
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+  }
+  .article-container {
+    margin: 0 auto;
+    position: relative;
+    top: 15vh;
+    min-height: 50vh;
+    width: 80%;
+    margin-bottom: 2vh;
+    color: rgb(100, 64, 97);
+  }
+
+  .article-text {
+    height: 50vh;
+    margin: 2vh;
+  }
+
+  .article-text:hover {font-weight: bold;}
+
+  /* Create three images that alternate left and right floats */
+  .float-left {
+    height: 50vh;
+    width: 50vh;
+    float: left;
+    margin: .5vw 2vw 5vw 0;
+  }
+
+  .float-right {
+    height: 50vh;
+    width: 50vh;
+    float: right;
+    margin: .5vw 0 5vw 2vw;
+  }
+  
+  /* Clear floats */
+  .clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+  /* Style manufacturers banner */
+  #manufacturers_showcase {
+    position: relative;
+    top: 10vh; 
+    height: 35vh;
+    background-color: rgb(100, 64, 97);
+    opacity: .8;
+  }
+
+  #manufacturers_logos {
+    margin: 0 auto;
+    width: 80%;
+    vertical-align: middle;
+  }
+
+  #manufacturers_logos>a>img {
+    margin-right: 1vw;
+    width: 11vw;
+    height: 10vw;
+  }
+
+  #manufacturers_logos>a:nth-child(3)>img {
+    margin-right: 1vw;
+    width: 12vw;
+    height: 7vw;
+  }
+
+  #manufacturers_logos>a:nth-child(4)>img {
+    margin-right: 1vw;
+    width: 16vw;
+    height: 4vw;
+  }
+
+  #manufacturers_logos>a:nth-child(5)>img {
+    margin-right: 1vw;
+    width: 16vw;
+    height: 5vw;
+  }
+
+  /* Style the clients' testimonials */
+  #testimonials {
+    position: relative;
+    top: 10vh; 
+    height: 80vh;
+    background-color: transparent;
+  }
+  
+  .testimonials-container {
+    margin-top: 15vh;
+    margin: 0 auto;
+    min-height: 65vh;
+    width: 90vw;
+  }
+
+  .comments {
+    width: 40vw;
+    height: 35vh;
+    border-radius: 90%;
+    background-color: rgb(100, 64, 97, .7);
+    text-shadow: 3px 5px 2px rgb(100, 64, 97);
+    -webkit-box-shadow: 5px 5px 15px 5px #000000; 
+    box-shadow: 5px 5px 15px 5px #000000;
+  }
+
+  .comments>p {
+    font-family: 'Amatic SC', cursive;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center; 
+    margin: 2.5em 1.5em;
+    color: white;
+  }
+
+  /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+  @media (max-width: 600px) {
+    nav, article {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  /* Iframe in the contact page */
+  iframe {
+    width: 100vw;
+    height: 70vh;
+  }
+
+  /* Image gallery in gallery page */
+  /* Position the image container (needed to position the left and right arrows) */
+  .container-gallery {
+    position: relative;
+    width: 60vw;
+    margin: 0 auto;
+  }
+
+  .gallerySlides>img {
+    width: 100%;
+    height: 80vh;
+  } 
+
+  /* Hide the images by default */
+  .gallerySlides {display: none;}
+
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {cursor: pointer;}
+
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 1em;
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+
+  /* Position the "next button" to the right */
+  .next {right: 0;}
+
+  /* On hover, add a dark violet background color */
+  .prev:hover,
+  .next:hover {
+    background-color: rgb(100, 64, 97);
+  }
+
+  /* Container for image text */
+  .caption-container {
+    width: 100%;
+    text-align: center;
+    background-color: rgb(100, 64, 97);
+    padding: .2em;
+    color: white;
+  }
+
+  .container-thumbnail {
+    margin-left: 14vw;
+    width: 100vw;
+  }
+
+  /* Six floating images */
+  .container-thumbnail>.column>img {
+    float: left;
+    width: 12vw;
+    height: 30vh;
+  }
+
+  .container-thumbnail:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* Add a transparency effect for thumnbail images */
+  .demo {opacity: 0.6;}
+
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+
+
+
+
+    
