@@ -215,7 +215,7 @@
     font-size: 1.2em;
     font-weight: bold;
     text-align: center; 
-    margin: 1.5em;
+    margin: 2.5em 1.5em;
     color: white;
   }
 
@@ -281,7 +281,7 @@
     width: 100%;
     text-align: center;
     background-color: rgb(100, 64, 97);
-    padding: .1vw;
+    padding: .2em;
     color: white;
   }
 
